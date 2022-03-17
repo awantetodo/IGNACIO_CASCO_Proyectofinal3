@@ -1,0 +1,116 @@
+/* aca defino la paleta de colores del proyect*/
+/* generales */
+html {
+  font-size: 125%;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Grilla */
+.grid-container {
+  display: grid;
+  margin: 40px 0 40px 0;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(3, 200px);
+  gap: 1px 1px;
+  text-align: center;
+  justify-content: stretch;
+  font-size: 1.5rem;
+  grid-template-areas: "bannerUno bannerUno bannerUno bannerUno" "noticiaDos noticiaDos noticiaTres noticiaCuatro" "noticiaCinco noticiaSeis noticiaSiete noticiaCuatro";
+}
+
+.bannerUno {
+  grid-area: bannerUno;
+  color: #8e2761;
+  background-color: #e1aebc;
+}
+
+.noticiaTres {
+  grid-area: noticiaTres;
+  background-color: #f073a4;
+}
+
+.noticiaDos {
+  grid-area: noticiaDos;
+  color: #e1aebc;
+  background-color: #8e2761;
+}
+
+.noticiaCuatro {
+  grid-area: noticiaCuatro;
+  background-color: #76b8b8;
+}
+
+.noticiaCinco {
+  grid-area: noticiaCinco;
+  background-color: #f073a4;
+}
+
+.noticiaSeis {
+  grid-area: noticiaSeis;
+  background-color: #76b8b8;
+}
+
+.noticiaSiete {
+  grid-area: noticiaSiete;
+  background-color: #8e2761;
+  color: #e1aebc;
+}
+
+/* Footer */
+footer {
+  background-color: #76b8b8;
+  width: 100%;
+  height: 100px;
+  padding: 50px 0 0 0;
+}
+
+footer h5 {
+  font-size: 1, 5rem;
+  font-weight: 900;
+  text-align: center;
+  font-size: medium;
+  overflow: clip;
+}
+
+/* header */
+.la {
+  background-image: url("images/la.jpg");
+}
+
+.chicago {
+  background-image: url("images/chicago.jpg");
+}
+
+.ny {
+  background-image: url("images/ny.jpg");
+}
+
+header nav .flexMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 40px;
+  font-size: 1.2rem;
+  background-color: #76b8b8;
+}
+
+.flexMenu li a {
+  text-decoration: none;
+  text-shadow: 3px;
+  color: #8e2761;
+}
+
+header h1 {
+  color: #8e2761;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 40px;
+}
+
+/*# sourceMappingURL=main.css.map */
